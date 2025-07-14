@@ -297,7 +297,7 @@ def reconstruction_error_analysis(data, results):
 # 主程序
 if __name__ == "__main__":
     # 文件路径 - 替换为您的实际文件路径
-    file_path = r"C:\Users\86133\Desktop\各种资料\python\量化\使用HUBER M离群化处理的因子标准化\消费50品质因子数据_huber处理_Z.csv"
+    file_path = r"消费50品质因子数据_huber处理_Z.csv"
 
     # 1. 加载和预处理数据
     data, feature_names, original_df = load_and_preprocess(file_path)

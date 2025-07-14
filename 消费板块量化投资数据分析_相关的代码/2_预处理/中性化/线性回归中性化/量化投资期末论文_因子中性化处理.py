@@ -12,7 +12,7 @@ mv_data = mv_data.rename(columns={
 })
 
 # 估值因子
-val_data = pd.read_csv(r"C:\Users\86133\Desktop\各种资料\python\量化\标准化后因子\processed_消费50估值数据_R_Z.csv",
+val_data = pd.read_csv("processed_消费50估值数据_R_Z.csv",
                        header=None,
                        names=['trade_date', 'stock_code', 'PEG', 'PB', 'PE', 'PS'])
 
@@ -20,7 +20,7 @@ val_data['trade_date'] = pd.to_datetime(val_data['trade_date']).dt.strftime('%Y-
 
 # 成长因子
 growth_data = pd.read_csv(
-    r"C:\Users\86133\Desktop\各种资料\python\量化\标准化后因子\processed_消费50成长因子（补齐)_R_Z.csv", header=None,
+    "processed_消费50成长因子（补齐)_R_Z.csv", header=None,
     names=['trade_date', 'stock_code', 'NetProfit_Growth', 'NetAsset_Growth',
            'Revenue_Growth', 'ROE', 'ROA'])
 
@@ -28,7 +28,7 @@ growth_data['trade_date'] = pd.to_datetime(growth_data['trade_date']).dt.strftim
 
 # 品质因子
 quality_data = pd.read_csv(
-    r"C:\Users\86133\Desktop\各种资料\python\量化\标准化后因子\processed_消费50品质因子数据（补齐)_R_Z.csv", header=None,
+    "processed_消费50品质因子数据（补齐)_R_Z.csv", header=None,
     names=['trade_date', 'stock_code', 'Inventory_Turnover',
            'TotalAsset_Turnover', 'CurrentAsset_Turnover', 'Capital_Fixed_Ratio'])
 

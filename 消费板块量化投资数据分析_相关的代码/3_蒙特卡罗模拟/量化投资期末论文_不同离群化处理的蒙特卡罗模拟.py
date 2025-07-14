@@ -242,8 +242,8 @@ def plot_comparison_results(comparison_df, mc_results, stats_results):
 
 
 def main():
-    huber_file = r"C:\Users\86133\Desktop\各种资料\python\量化\使用HUBER M离群化处理的因子标准化\消费50品质因子数据_huber处理_Z.csv"
-    mad_file = r"C:\Users\86133\Desktop\各种资料\python\量化\标准化后因子\processed_消费50品质因子数据（补齐)_R_Z.csv"
+    huber_file = "消费50品质因子数据_huber处理_Z.csv"
+    mad_file = "processed_消费50品质因子数据（补齐)_R_Z.csv"
 
     print("正在加载数据...")
     comparison_df = load_and_prepare_data(huber_file, mad_file)

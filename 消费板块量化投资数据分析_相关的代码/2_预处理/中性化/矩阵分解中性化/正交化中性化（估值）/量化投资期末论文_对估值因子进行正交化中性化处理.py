@@ -68,7 +68,7 @@ def visualize_results(original, orthogonalized, factor_names):
 
 
 def main():
-    file_path = r"C:\Users\86133\Desktop\各种资料\python\量化\使用HUBER M离群化处理的因子标准化\消费50估值因子_huber处理_Z.csv"
+    file_path = r"消费50估值因子_huber处理_Z.csv"
     df = pd.read_csv(file_path, header=1,names=['PEG值','市净率','PE(静)','市销率'],encoding='gbk')
 
     # 获取因子名称和矩阵
